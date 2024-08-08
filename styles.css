@@ -340,6 +340,10 @@ footer p {
     .container {
         width: 95%;
     }
+
+    .hero-image {
+        margin-top: 75px;
+        margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {
@@ -355,4 +359,13 @@ footer p {
         font-size: 1em;
         padding: 8px 16px;
     }
+
+    .hero-image {
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    flex-direction: row; /* Garante que os itens fiquem em linha para telas menores */
+  }
 }
