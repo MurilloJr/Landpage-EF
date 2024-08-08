@@ -323,6 +323,10 @@ footer p {
         flex: 1 1 100%;
         max-width: 90%;
     }
+    .hero-image {
+        margin-top: 35px;
+        margin-bottom: 30px;
+
 }
 
 @media (max-width: 768px) {
@@ -342,8 +346,13 @@ footer p {
     }
 
     .hero-image {
-        margin-top: 75px;
-        margin-bottom: 30px;
+        margin-top: 25px;
+        margin-bottom: 30px;}
+
+        nav ul {
+            flex-direction: row; /* Garante que os itens fiquem em linha para telas menores */
+          }
+        
 }
 
 @media (max-width: 480px) {
@@ -361,7 +370,7 @@ footer p {
     }
 
     .hero-image {
-    margin-top: 75px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
