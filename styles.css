@@ -329,17 +329,21 @@ footer p {
 .modal-content {
     background: #fff;
     margin: 15% auto;
-    padding: 20px;
+    padding: 0px;
     width: 80%;
     max-width: 720px;
     position: relative;
     border-radius: 10px;
+    border: 3px solid rgba(212, 175, 55, 0.8);
+    padding-top: -30px;
+
 }
 
 .modal-content video {
-    width: 80%; /* Ocupa toda a largura disponível do modal */
+    width: 100%; /* Ocupa toda a largura disponível do modal */
     height: auto;
-    aspect-ratio: 9 / 16; /* Define a proporção de aspecto para 9:16 */
+    aspect-ratio: 9 / 16; /* Define a proporção de aspecto para 9:16 */;
+
 }
 
 .close {
