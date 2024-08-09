@@ -337,8 +337,9 @@ footer p {
 }
 
 .modal-content video {
-    width: 80%;
+    width: 80%; /* Ocupa toda a largura disponível do modal */
     height: auto;
+    aspect-ratio: 9 / 16; /* Define a proporção de aspecto para 9:16 */
 }
 
 .close {
