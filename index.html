@@ -16,10 +16,12 @@
                 </div>
                 <nav>
                     <ul>
+                        <li><a href="#hero">Home</a></li>
                         <li><a href="#services">Serviços</a></li>
                         <li><a href="#courses">Cursos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
+        
                 </nav>
             </div>
         </div>
@@ -40,39 +42,39 @@
         <div class="container">
             <h2>Nossos Serviços</h2>
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">                    
                     <h3>Designer de Sobrancelha</h3>
                     <p>Mais do que uma tintura simples; é uma transformação que valoriza seu olhar.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">  
                     <h3>Reconstrução de Sobrancelhas</h3>
                     <p>A técnica que devolve suas sobrancelhas naturais.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">  
                     <h3>Micropigmentação de Sobrancelhas</h3>
                     <p>Eleve a naturalidade das suas sobrancelhas com fios incrivelmente realistas.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V2.mp3">  
                     <h3>Micropigmentação Labial</h3>
                     <p>Técnica que colore e define seus lábios de forma natural.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V2.mp4">  
                     <h3>Extensão de Cílios</h3>
                     <p>Realce seu olhar com técnicas que atendem ao seu estilo e desejo.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">  
                     <h3>Reconstrução de Aréolas e Harmonização Areolar</h3>
                     <p>A arte que te conecta com o espelho novamente.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">  
                     <h3>Limpeza de Pele</h3>
                     <p>Mais do que uma simples limpeza; é uma experiência de spa. Relaxe e aproveite este momentoS.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">  
                     <h3>Jato de Plasma</h3>
                     <p>Técnica avançada para suavizar as linhas da melhor idade.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item"  data-video="assets/EF_Estudio_02_08_V3.mp4">  
                     <h3>Camuflagem</h3>
                     <p>Redução eficaz de olheiras e estrias para uma aparência mais uniforme.</p>
                 </div>
@@ -86,19 +88,19 @@
         <div class="container">
             <h2>Nossos Cursos</h2>
             <div class="courses-grid">
-                <div class="course-item">
+                <div class="course-item" data-video="videos/design-sobrancelhas.mp4">
                     <h3>Design de Sobrancelhas</h3>
                     <p>Aprenda como reconstruir os pelos naturais da sobrancelha.</p>
                 </div>
-                <div class="course-item">
+                <div class="course-item" data-video="videos/design-sobrancelhas.mp4">
                     <h3>Extensão de Cílios</h3>
                     <p>Técnicas que valorizam o olhar de forma rápida e eficiente.</p>
                 </div>
-                <div class="course-item">
+                <div class="course-item" data-video="videos/design-sobrancelhas.mp4">
                     <h3>Micropigmentação Labial</h3>
                     <p>Te ensino a técnica e o método que tem feito milhares de mulheres se apaixonarem novamente por si.</p>
                 </div>
-                <div class="course-item">
+                <div class="course-item" data-video="videos/design-sobrancelhas.mp4">
                     <h3>Micropigmentação de Sobrancelhas</h3>
                     <p>Aprenda o procedimento mais procurada do mercado. Nossa técnica é o que há de mais novo e fácil para se desenvolver na área.</p>
                 </div>
@@ -129,5 +131,17 @@
             <p>&copy; 2024 EF Estúdio. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <!-- Modal -->
+<div id="video-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <video id="modal-video" controls>
+            <source src="" type="video/mp4">
+            Seu navegador não suporta o elemento <code>video</code>.
+        </video>
+    </div>
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
