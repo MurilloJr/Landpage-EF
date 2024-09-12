@@ -116,12 +116,12 @@ nav ul li a:hover::after {
 }
 
 .hero-image img {
-    width: 150px;
+    width: 180px;
     height: auto;
     border-radius: 50%;
     border: 3px solid rgb(212, 175, 55);
     margin-bottom: -30px;
-    margin-top: 40px;
+    margin-top: 70px;
     filter: grayscale(100%) opacity(0.8);
     transition: filter 0.3s ease;
 }
@@ -157,7 +157,7 @@ nav ul li a:hover::after {
 
 /* Seção de Serviços */
 #services {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 60px 20px;
     text-align: center;
 }
@@ -177,7 +177,7 @@ nav ul li a:hover::after {
 }
 
 .service-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -188,7 +188,7 @@ nav ul li a:hover::after {
 
 /* Seção de Cursos */
 #courses {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 60px 20px;
     text-align: center;
 }
@@ -208,7 +208,7 @@ nav ul li a:hover::after {
 }
 
 .course-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
