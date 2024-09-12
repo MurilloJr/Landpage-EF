@@ -1,37 +1,43 @@
-// script.js
-
-// Função para abrir o modal
-function openModal(videoSrc) {
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceItems = document.querySelectorAll('.service-item');
+    const courseItems = document.querySelectorAll('.course-item');
     const modal = document.getElementById('video-modal');
     const modalVideo = document.getElementById('modal-video');
-    
-    modalVideo.src = videoSrc;
-    modal.style.display = 'block';
-}
+    const closeModal = document.querySelector('.modal .close');
 
-// Função para fechar o modal
-function closeModal() {
-    const modal = document.getElementById('video-modal');
-    const modalVideo = document.getElementById('modal-video');
-    
-    modal.style.display = 'none';
-    modalVideo.src = ''; // Limpa o src para parar o vídeo
-}
-
-// Adiciona os eventos de click para abrir o modal
-document.querySelectorAll('.service-item, .course-item').forEach(item => {
-    item.addEventListener('click', () => {
-        const videoSrc = item.getAttribute('data-video');
-        openModal(videoSrc);
-    });
-});
-
-// Adiciona o evento de click para fechar o modal
-document.querySelector('.modal .close').addEventListener('click', closeModal);
-
-// Fecha o modal se clicar fora dele
-window.addEventListener('click', (event) => {
-    if (event.target == document.getElementById('video-modal')) {
-        closeModal();
+    function openModal(videoSrc) {
+        modalVideo.src = videoSrc;
+        modal.style.display = 'block';
     }
+
+    function closeModalFn() {
+        modal.style.display = 'none';
+        modalVideo.src = ''; // Stop video when modal is closed
+    }
+
+    // Add click event listeners to service items
+    serviceItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const videoSrc = this.getAttribute('data-video');
+            openModal(videoSrc);
+        });
+    });
+
+    // Add click event listeners to course items
+    courseItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const videoSrc = this.getAttribute('data-video');
+            openModal(videoSrc);
+        });
+    });
+
+    // Add click event listener to close button
+    closeModal.addEventListener('click', closeModalFn);
+
+    // Close modal when clicking outside of modal content
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModalFn();
+        }
+    });
 });
