@@ -116,7 +116,7 @@ nav ul li a:hover::after {
 }
 
 .hero-image img {
-    width: 180px;
+    width: 210px;
     height: auto;
     border-radius: 50%;
     border: 3px solid rgb(212, 175, 55);
